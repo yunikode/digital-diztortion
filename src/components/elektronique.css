@@ -1,0 +1,43 @@
+.logo__elektro:hover::after {
+  content: ' (professional)';
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 0.9em;
+}
+
+.elektro__title {
+  align-self: center;
+}
+
+.elektro__container {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  display: block;
+}
+
+.elektro__list--container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.elektro__list {
+  float: right;
+  width: 30em;
+}
+
+.elektro__item {
+  color: aqua;
+  padding: 0 1em;
+  text-shadow: 0 0 2px black;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.elektro__item:hover {
+  color: white;
+  border: 2px solid white;
+  border-radius: 0 10px 0 10px;
+}

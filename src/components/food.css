@@ -1,0 +1,118 @@
+
+.food--main {
+  font-family: 'IM Fell English', cursive;
+  font-size: 1.1em;
+  background: url('/static/food.jpg') top no-repeat;
+  background-attachment: fixed;
+
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__title--box {
+  display: flex;
+  flex-direction: column;
+  color: #4B4B4B;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1.5em 2em;
+}
+
+.header__title {
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 3em;
+}
+
+.header__subtitle {
+  /*display: inline-flex;*/
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.fromTop {
+  position: absolute;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  /* font-family: 'Amatic SC', serif; */
+  cursor: pointer;
+  position: absolute;
+  bottom: 0.5em;
+  font-size: 2.5em;
+  transform: rotate(-90deg);
+  animation: 1s ease-in-out infinite bouncee;
+}
+
+.food--section {
+  display: flex;
+  width: 80%;
+  max-width: 960px;
+  flex-direction: row;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.food--container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1em;
+}
+
+.food--container h1, .food--container h2 {
+  text-align: center;
+}
+
+.food--container p {
+  color: #43464B;
+}
+
+.food--container strong {
+  color: black;
+}
+
+@keyframes bouncee {
+  0% {
+    bottom: 0.5em
+  }
+
+  50% {
+    bottom: 0.1em;
+  }
+
+  100% {
+    bottom: 0.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .food--section {
+    font-size: 1em;
+  }
+
+  .header__title--box {
+    padding: 0.8em;
+  }
+
+  .header__title {
+    font-size: 1em;
+  }
+
+  .header__subtitle {
+    font-size: 0.8em;
+  }
+
+  .arrow {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Open+Sans+Condensed:300|IM+Fell+English');
+
+body {
+  background: #43464B;
+}
+
+li {
+  color: #cccccc;
+  font-variant: normal;
+  font-family: 'Shadows Into Light', serif;
+  font-size: 2em;
+}
+
+li:hover {
+  color: aqua;
+  text-shadow: 0px 0px 5px rgba(204, 204, 204, 1);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+a>* {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 1em;
+}
+
+.fill {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+path {
+  stroke-dasharray: 350;
+  /* fill-opacity: 0; */
+  animation: animate 1s cubic-bezier(0, .23, 1, .1);
+}
+
+.logo {
+  width: 50vw;
+  max-width: 600px;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 80vw;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: flex;
+}
+
+
+.font {
+  font-family: 'Shadows Into Light', sans-serif;
+}
+
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 350;
+  }
+
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 350;
+  }
+
+  90% {
+    fill: rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    opacity: 1;
+    fill: rgba(255, 255, 255, 1);
+    stroke-dashoffset: 0
+  }
+}

@@ -1,0 +1,163 @@
+.container {
+  background: #43464B;
+}
+
+.ding {
+  color: #E5E7E7;
+}
+
+.container>div {
+  overflow: initial !important;
+}
+
+.container>div>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  pointer-events: none;
+  justify-content: start !important;
+  font-family: 'Shadows Into Light', sans-serif;
+  line-height: normal;
+}
+
+.projects--number {
+  font-size: 300px;
+  color: #43464B;
+}
+
+
+
+.number__block {
+  text-align: center;
+  width: 15vw;
+}
+
+.title {
+  font-size: 3em;
+  color: #E5E7E7;
+}
+
+.title span {
+  display: inline-block;
+  position: relative;
+  transform: translate3d(85%, 0, 0);
+}
+
+.text__container {
+  min-width: 300px;
+  width: 50vw;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background: rgba(67, 70, 75, 1);
+  box-shadow: 1rem 1rem 4rem black;
+}
+
+.text__container h1 {
+  margin: 0;
+}
+
+.projects--subtitle {
+  margin: 0;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  color: #E5E7E7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.text__container p {
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+
+.nav__buttons {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100vw;
+  height: 50vh;
+  padding: 3em;
+}
+
+.nav {
+  background: transparent;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  pointer-events: all;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav:hover {
+  background: black
+}
+
+.nav a {
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.nav:hover a {
+  color: white;
+}
+
+.next a {
+  color: white;
+}
+
+.linky {
+  pointer-events: all;
+  cursor: pointer;
+  padding: 0 0.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.linky:hover {
+  background: #43464B;
+  border-radius: 1rem;
+  color: #e5e7e7;
+}
+
+.slopeBegin {
+  background-color: #e5e7e7;
+  clip-path: polygon(20vw 0, 70 % 0, calc(70 % - 20vw) 100%, 0 100%);
+}
+
+.slopeEnd {
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(70% 0, 100% 0, calc(100% - 20vw) 100%, calc(70% - 20vw) 100%)
+;
+}
+
+.slopeBegin,
+.slopeEnd {
+  position: absolute;
+  width: 140%;
+  height: 100%;
+}
+
+@media (max-width:600px) {
+  .number__block {
+    margin-top: -2em;
+  }
+
+  .projects--subtitle {
+    font-size: 1em;
+  }
+
+  .link__section {
+    font-size: 0.5em;
+  }
+}

@@ -1,0 +1,69 @@
+
+.logo:hover::before {
+  display: inline-block;
+  margin-bottom: 0.9em;
+  content: 'next page =>';
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.logo__junk:hover::after {
+  content: ' (personal)';
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.logo:hover svg {
+  display: none;
+}
+
+.junk__container {
+  margin-top: 4em;
+  width: 80vw;
+}
+
+.junk__list {
+  width: fit-content;
+}
+
+.junk__list--border {
+  box-shadow: 0 0 2px white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.junk__item {
+  margin-left: 1rem;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-shadow: 0 0 4px black;
+}
+
+.junk__item:hover {
+  font-variant: normal;
+  cursor: pointer;
+}
+
+.junk__item:hover::before {
+  content: '[x] ';
+  font-family: monospace;
+  font-size: 1.5em;
+  display: block;
+  position: absolute;
+  left: -2em;
+}
+
+@media (max-width: 600px) {
+  .junk__item {
+    font-size: 1.5em;
+  }
+
+  .junk__container {
+    margin: 0 auto;
+    margin-top: 4em;
+    width: auto;
+  }
+}

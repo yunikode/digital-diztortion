@@ -1,0 +1,65 @@
+.fill {
+  overflow-x: hidden;
+}
+
+
+.albums {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.albums--header {
+  font-family: 'IM Fell English';
+  font-weight: normal;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -1.5rem;
+  width: auto;
+  justify-content: space-between;
+
+}
+.my-masonry-grid_column {
+  padding-left: 1.5rem;
+  background-clip: padding-box;
+}
+
+.gallery--link__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.gallery--link__pic {
+  object-fit: cover;
+  width: 100%;
+  height: 15rem;
+}
+
+.gallery--link__item {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  font-size: 2rem;
+  background: rgba(255,255,255,0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-shadow: 0 0 1rem white;
+  font-family: 'IM Fell English', sans-serif;
+}
+
+
+.gallery--link__container:hover  .gallery--link__item {
+  height: 100%;
+}
