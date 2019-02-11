@@ -49,25 +49,6 @@ const NavLink = props => (
   </li>
 );
 
-const Pics = ({ style }) => (
-  <animated.div
-    style={{
-      ...style,
-      background: `#ef5350`
-    }}
-  >
-    <div
-      style={{
-        height: '100vh',
-        position: 'absolute',
-        top: '0'
-      }}
-    >
-      <h1>me!</h1>
-    </div>
-  </animated.div>
-);
-
 const items = [
   <Link
     to="/albums"
@@ -95,7 +76,7 @@ const items = [
     The Preparation of Food
   </Link>,
   <Link
-    to=""
+    to="/journey"
     className="elektro__item gender"
     onMouseOver={e =>
       toggleContent(

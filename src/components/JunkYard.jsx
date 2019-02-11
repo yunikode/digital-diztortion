@@ -38,7 +38,7 @@ const items = [
   <Link to="/projects" className="projects">projects</Link>,
   <Link to="/tools" className="tools">tools (CLI)</Link>,
   <Link to="/games" className="cheatsheets">games</Link>,
-  <Link to="" className="behind">behind the (web)pages</Link>,
+  <a href="https://github.com/zee-german/digital-diztortion" className="behind">behind the (web)pages</a>,
   <a href="https://github.com/zee-german" target="_blank" rel="noopener" className="github">find me on github</a>
 
 ];
