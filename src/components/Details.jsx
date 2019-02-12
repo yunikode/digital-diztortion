@@ -18,7 +18,7 @@ class Details extends Component {
 
           </h1>
 
-          
+
           <h1>{this.props.location.state.subtitle}</h1>
         </div>
       </header>
@@ -38,12 +38,14 @@ class Details extends Component {
         </div>
       </section>
 
-      <section className="content--flex">
+      <section className="details__content">
 
         <div className="blurb">
           <ReactMarkdown source={this.props.location.state.blurb} escapeHtml={false}/>
 
         </div>
+
+        <p className="github--footer">See more on <a href={this.props.location.state.github} className="github--link">github</a></p>
       </section>
 
 

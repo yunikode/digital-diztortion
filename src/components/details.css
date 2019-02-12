@@ -5,7 +5,7 @@
 
 .section--white {
   width: 100vw;
-  background: white;
+  background: #f1f1f1;
 }
 
 .content--flex {
@@ -14,8 +14,13 @@
   margin: 0 auto;
   width: 80vw;
   max-width: 960px;
-
   justify-content: space-between;
+}
+
+.details__content {
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 960px;
 }
 
 .details--header__bar {
@@ -37,9 +42,9 @@
 }
 
 .details--header__content a:hover {
-  color: aqua;
+  color: #f1f1f1;
   background: black;
-  border-radius: 1em;
+  border-radius: 1rem;
   padding: 1rem;
 }
 
@@ -53,7 +58,7 @@
 }
 
 .details--tech {
-  background: white;
+  background: #f1f1f1;
 }
 
 .details--tech h1 {
@@ -71,23 +76,22 @@
   list-style: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .tech__list--item {
-  padding: 0.7rem;
-  padding-bottom: 0.5rem;
-  margin: 0.7rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem;
   background: black;
   border-radius: 1rem;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 0.9em;
-  color: white;
+  font-weight: bold;
+  color: #f1f1f1;
   pointer-events: none;
 }
 
 .blurb {
-  color: white;
+  color: #f1f1f1;
 }
 
 .blurb h2 {
@@ -104,6 +108,16 @@
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.3em;
   pointer-events: none;
+}
+
+.github--footer {
+  text-align: center;
+  color: #f1f1f1;
+  font-weight: bold;
+}
+
+.github--link {
+  color: #00C6CF;
 }
 
 @media (max-width: 600px) {
