@@ -20,7 +20,6 @@ const ProjectsData = [
     title: 'Billboard',
     subtitle: 'Tweets like a duck',
     link: '/details/billboard',
-    gradient: 'gears',
     tech: ['Vue JS', 'Tailwind CSS', 'Adonis JS'],
     pics:
       'https://images.unsplash.com/photo-1490529553037-4f4ed6f3f575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
@@ -31,19 +30,19 @@ const ProjectsData = [
     title: 'Bello',
     subtitle: 'Kanbans like Trello',
     link: '/details/bello',
-    gradient: 'circuit',
     github: 'https://github.com/zee-german/',
     tech: ['Vue JS', 'Feathers JS'],
     pics: 'https://images.unsplash.com/photo-1524048824421-51d2958dc634?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
     blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, laboriosam enim sunt saepe aliquid maiores placeat quam iste tempora doloribus iure quae, deleniti est qui veniam itaque omnis rem. Alias laudantium animi iusto deleniti consectetur, fugit quod. Assumenda, tenetur, nam?'
+      'A recreation of a Kanban where users can sign up, create projects, make lists, create and move posts\n\n## Features\n- Feathers JS powered backend providing the API\n- VueX powered clientside\n- Styled with Vuetify'
   },
   {
     title: 'Blog',
     subtitle: 'Reacts like a Wordpresser',
     link: '/details/blog',
-    gradient: 'gears',
     tech: ['React JS', 'GraphQL'],
+    github: 'https://github.com/zee-german/',
+    pics: 'https://images.unsplash.com/photo-1461958508236-9a742665a0d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
     blurb:
       '## Test header\n\n A GraphQL powered static site generator that will meet most realistic expectations of a modern Wordpress page.'
   },
@@ -51,8 +50,9 @@ const ProjectsData = [
     title: 'Tea Timer',
     subtitle: 'homebrew not for macs',
     link: '/details/teatimer',
-    gradient: 'gears',
     tech: ['Vue JS', 'Node JS'],
+    github: 'https://github.com/zee-german/',
+    pics: 'https://images.unsplash.com/photo-1484246393043-91f196378102?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
     blurb:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nostrum, facilis eos culpa fugiat at quaerat asperiores nam possimus sed illum qui labore. Commodi, voluptate cum reiciendis, quasi omnis maxime!'
   }
@@ -66,6 +66,7 @@ const Page = ({
   onPrev,
   title,
   subtitle,
+  github,
   link,
   tech,
   blurb,
@@ -121,7 +122,8 @@ const Page = ({
                 subtitle: `${subtitle}`,
                 tech,
                 blurb,
-                pics
+                pics,
+                github: `${github}`,
               }
             }}
             className="linky"
@@ -171,6 +173,7 @@ class Projects extends Component {
                 }}
                 title={item.title}
                 subtitle={item.subtitle}
+                github={item.github}
                 link={item.link}
                 tech={item.tech}
                 blurb={item.blurb}
