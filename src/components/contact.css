@@ -11,12 +11,12 @@
 
 .contact__text--link {
   font-weight: bold;
-  color: aqua;
+  color: #00C6CF;
 }
 
 .font:hover {
   color: black;
-  background: white;
+  background: #f1f1f1;
 }
 
 .contact__big {
@@ -34,7 +34,7 @@
   height: 50vw;
   max-height: 800px;
   margin: 0 auto;
-  color: white;
+  color: #f1f1f1;
   background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
 }
@@ -44,7 +44,7 @@
   position: absolute;
 	width: fit-content;
 	padding: 0;
-  color: #fff;
+  color: #f1f1f1;
 	bottom: 3vh;
 }
 

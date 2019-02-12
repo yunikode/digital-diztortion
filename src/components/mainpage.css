@@ -12,7 +12,7 @@ li {
 }
 
 li:hover {
-  color: aqua;
+  color: #00C6CF;
   text-shadow: 0px 0px 5px rgba(204, 204, 204, 1);
 }
 

@@ -12,7 +12,7 @@
 .albums--header {
   font-family: 'IM Fell English';
   font-weight: normal;
-  color: white;
+  color: #f1f1f1;
   font-size: 2rem;
   text-align: center;
 }
@@ -55,7 +55,7 @@
   align-items: center;
   justify-content: center;
   color: black;
-  text-shadow: 0 0 1rem white;
+  text-shadow: 0 0 1rem #f1f1f1;
   font-family: 'IM Fell English', sans-serif;
 }
 
