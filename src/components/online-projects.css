@@ -150,14 +150,24 @@
 
 @media (max-width:600px) {
   .number__block {
-    margin-top: -2em;
+    margin-top: -3em;
+  }
+
+  .projects--title {
+    font-size: 1em;
   }
 
   .projects--subtitle {
-    font-size: 1em;
+    font-size: 0.7em;
   }
 
   .link__section {
     font-size: 0.5em;
+  }
+  .projects--number {
+    font-size: 10em;
+  }
+  .text__container {
+    width: 70%;
   }
 }

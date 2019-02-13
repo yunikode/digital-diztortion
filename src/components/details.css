@@ -122,13 +122,15 @@
 
 @media (max-width: 600px) {
   .details--body {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .details--header__content {
     flex-direction: column;
+    font-size: 1em;
   }
-  .details--header__content h1 {
-    text-align: center;
+
+  .blurb li {
+    font-size: 1rem;
   }
 }

@@ -113,7 +113,7 @@ const Page = ({
 
     <ParallaxLayer className="text title" offset={offset} speed={0.4}>
       <div className="text__container">
-        <h1>{title}</h1>
+        <h1 className="projects--title">{title}</h1>
         <h2 className="projects--subtitle">{subtitle}</h2>
         <p className="link__section">
           <Link
