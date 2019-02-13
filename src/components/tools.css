@@ -28,26 +28,19 @@
   line-height: normal;
 }
 
-.number {
-  font-size: 400px;
+.number__block--tools {
   color: #E5E7E7;
   font-family: 'Shadows Into Light', sans-serif;
-}
-
-.number__block--tools {
   text-align: center;
   width: 15vw;
+  font-size: 20em;
 }
 
-.title {
-  font-size: 3em;
+.tools--title {
+  font-size: 2em;
   color: #E5E7E7;
-}
-
-.title span {
   display: inline-block;
   position: relative;
-  transform: translate3d(85%, 0, 0);
 }
 
 .tooltext__container {
@@ -121,19 +114,22 @@
 
 @media (max-width:600px) {
   .number__block--tools {
-    margin-top: -1.5em;
-    width: 100vw;
+    margin-top: -3em;
   }
 
-  .title {
-    font-size: 2em;
+  .tools--title {
+    font-size: 1em;
   }
 
   .subtitle {
-    font-size: 1em;
+    font-size: 0.7em;
+  }
+
+  .number__block--tools {
+    font-size: 10em;
   }
 
   .link__section {
-    font-size: 1em;
+    font-size: 0.5em;
   }
 }

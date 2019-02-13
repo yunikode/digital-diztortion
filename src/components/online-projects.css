@@ -114,6 +114,7 @@
 
 .next a {
   color: #f1f1f1;
+  text-shadow: 0 0 8px black;
 }
 
 .linky {
