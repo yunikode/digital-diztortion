@@ -12,7 +12,6 @@ const defaultStyles = {
   justifyContent: 'center',
   alignItems: 'center',
   flexDirection: 'column',
-  fontFamily: 'Kausha Script'
 };
 
 const GamesData = [
@@ -25,7 +24,7 @@ const GamesData = [
     pics:
       'https://images.unsplash.com/photo-1513646981453-ffb069114476?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80',
     blurb:
-      'A recreation of Tetris with featured added to pay homage to the technology of its heydays like monochrome monitors and CRT scanlines.'
+      'A recreation of Tetris with featured added to pay homage to the technology of its heydays like monochrome monitors and CRT scanlines.\n## Features\n- progessively faster levels\n- scanline mode\n- monochrome mode\n- persistent highscores\n- '
   },
   {
     title: 'Name that Color',
@@ -35,7 +34,7 @@ const GamesData = [
     github: 'https://github.com/zee-german/',
     tech: ['JS6', 'HTML5'],
     blurb:
-      "Ever wondered how many colours are defined by name in CSS? \nHere you get to guess them all! \nFor the insane there is a mode where we ask HEX-Code not the name.\n## Features\n- one\n- two"
+      "Ever wondered how many colours are defined by name in CSS? \nHere you get to guess them all! \nFor the insane there is a mode where we ask HEX-Code not the name.\n## Features\n- unlockable HEX-mode for the insane\n- history of the last guesses"
   },
   {
     title: 'Type-Type-R',

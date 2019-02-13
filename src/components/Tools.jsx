@@ -30,17 +30,12 @@ const ToolsData = [
   {
     title: "Weather",
     subtitle: "Forecast on your terminal",
-    link: "/details/bello",
+    link: "/details/cli-weather",
+    pics: 'https://images.unsplash.com/photo-1519110437047-c6488cf2051d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80',
     tech: ['Node JS ', 'Openweather API'],
-    blurb: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis animi voluptatibus fugiat accusamus quos consequuntur consectetur dolore quidem, dolor, cumque non obcaecati ducimus accusantium nobis deserunt. Enim magni, quaerat sunt?'
-  },
-  {
-    title: "Blog",
-    subtitle: "Reacts like a Wordpresser",
-    link: "/details/blog",
-    tech: ['Lorem ipsum', 'Lorem ipsum', 'Lorem ipsum', 'Lorem ipsum','Lorem ipsum dolores'],
-    blurb: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio aperiam est odit cupiditate soluta itaque aut, laborum. Tempore impedit libero, veniam alias optio natus a consequatur, quasi perspiciatis, corporis, voluptatum.'
+    blurb: 'Check the current weather just from your terminal, see the forecast for the week.\n## Features\n- different cities with one parameter away\n- change between metric and imperial'
   }
+
 ]
 
 const Page = ({
@@ -87,7 +82,7 @@ const Page = ({
 
   <ParallaxLayer className="tooltext title" offset={offset} speed={0.4}>
     <div className="tooltext__container">
-      <h1 className="projects--title">{title}</h1>
+      <h1 className="tools--title">{title}</h1>
       <h2 className="subtitle">{subtitle}</h2>
       <p className="link__section">
         <Link to={{

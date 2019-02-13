@@ -20,6 +20,7 @@ const ProjectsData = [
     title: 'Billboard',
     subtitle: 'Tweets like a duck',
     link: '/details/billboard',
+    github: 'https://github.com/zee-german/',
     tech: ['Vue JS', 'Tailwind CSS', 'Adonis JS'],
     pics:
       'https://images.unsplash.com/photo-1490529553037-4f4ed6f3f575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
@@ -40,11 +41,11 @@ const ProjectsData = [
     title: 'Blog',
     subtitle: 'Reacts like a Wordpresser',
     link: '/details/blog',
-    tech: ['React JS', 'GraphQL'],
+    tech: ['Gatsby JS', 'React JS', 'GraphQL'],
     github: 'https://github.com/zee-german/',
     pics: 'https://images.unsplash.com/photo-1461958508236-9a742665a0d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
     blurb:
-      '## Test header\n\n A GraphQL powered static site generator that will meet most realistic expectations of a modern Wordpress page.'
+      'A React powered static site generator that will meet most realistic expectations of a modern Wordpress page.\n## Features\n- GraphQL queries on creation of the pages\n- React powered features\n- ServerSideRendering'
   },
   {
     title: 'Tea Timer',
@@ -52,9 +53,9 @@ const ProjectsData = [
     link: '/details/teatimer',
     tech: ['Vue JS', 'Node JS'],
     github: 'https://github.com/zee-german/',
-    pics: 'https://images.unsplash.com/photo-1484246393043-91f196378102?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+    pics: 'https://images.unsplash.com/photo-1491720731493-223f97d92c21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1230&q=80',
     blurb:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nostrum, facilis eos culpa fugiat at quaerat asperiores nam possimus sed illum qui labore. Commodi, voluptate cum reiciendis, quasi omnis maxime!'
+      'Easy to use tea-timer. Select your tea from an easy to use menu and wait for the bell to ring.\n ## Features\n- easy to use interface\n- persistent database\n- add new teas with a click'
   }
 ];
 
