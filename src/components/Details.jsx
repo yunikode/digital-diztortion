@@ -45,7 +45,7 @@ class Details extends Component {
 
         </div>
 
-        <p className="github--footer">See more on <a href={this.props.location.state.github} className="github--link">github</a></p>
+        <p className="github--footer">See source on <a href={this.props.location.state.github} className="github--link">github</a></p>
       </section>
 
 
