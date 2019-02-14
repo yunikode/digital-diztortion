@@ -1,10 +1,7 @@
-
 .container {
   background: #e5e7e7;
   font-family: 'Open Sans Condensed', serif;
 }
-
-
 
 .ding {
   color: #f1f1f1;
@@ -56,7 +53,7 @@
 .tooltext__container h1 {
   font-family: 'IM Fell English', serif !important;
   font-weight: normal;
-  text-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
   margin: 0;
   padding-top: 1rem;
 }
@@ -95,14 +92,13 @@
 .toolslopeBegin {
   background-color: #43464B;
   background-size: cover;
-  clip-path: polygon(20vw 0, 70 % 0, calc(70 % - 20vw) 100%, 0 100%);
+  clip-path: polygon(20vw 0, 70% 0, calc(70% - 20vw) 100%, 0 100%);
 }
 
 .toolslopeEnd {
   background-size: cover;
   background-repeat: no-repeat;
-  clip-path: polygon(70% 0, 100% 0, calc(100% - 20vw) 100%, calc(70% - 20vw) 100%)
-;
+  clip-path: polygon(70% 0, 100% 0, calc(100% - 20vw) 100%, calc(70% - 20vw) 100%);
 }
 
 .toolslopeBegin,

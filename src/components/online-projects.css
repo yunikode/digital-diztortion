@@ -28,8 +28,6 @@
   color: #43464B;
 }
 
-
-
 .number__block {
   text-align: center;
   width: 15vw;
@@ -132,14 +130,13 @@
 
 .slopeBegin {
   background-color: #e5e7e7;
-  clip-path: polygon(20vw 0, 70 % 0, calc(70 % - 20vw) 100%, 0 100%);
+  clip-path: polygon(20vw 0, 70% 0, calc(70% - 20vw) 100%, 0 100%);
 }
 
 .slopeEnd {
   background-size: cover;
   background-repeat: no-repeat;
-  clip-path: polygon(70% 0, 100% 0, calc(100% - 20vw) 100%, calc(70% - 20vw) 100%)
-;
+  clip-path: polygon(70% 0, 100% 0, calc(100% - 20vw) 100%, calc(70% - 20vw) 100%);
 }
 
 .slopeBegin,
@@ -165,9 +162,11 @@
   .link__section {
     font-size: 0.5em;
   }
+
   .projects--number {
     font-size: 10em;
   }
+
   .text__container {
     width: 70%;
   }
