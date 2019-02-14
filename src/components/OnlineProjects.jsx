@@ -20,7 +20,7 @@ const ProjectsData = [
     title: 'Billboard',
     subtitle: 'Tweets like a duck',
     link: '/details/billboard',
-    github: 'https://github.com/zee-german/',
+    github: 'https://github.com/zee-german/billboard',
     tech: ['Vue JS', 'Tailwind CSS', 'Adonis JS'],
     pics:
       'https://images.unsplash.com/photo-1490529553037-4f4ed6f3f575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
@@ -31,7 +31,7 @@ const ProjectsData = [
     title: 'Bello',
     subtitle: 'Kanbans like Trello',
     link: '/details/bello',
-    github: 'https://github.com/zee-german/',
+    github: 'https://github.com/zee-german/bello',
     tech: ['Vue JS', 'Feathers JS'],
     pics: 'https://images.unsplash.com/photo-1524048824421-51d2958dc634?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
     blurb:
@@ -42,7 +42,7 @@ const ProjectsData = [
     subtitle: 'Reacts like a Wordpresser',
     link: '/details/blog',
     tech: ['Gatsby JS', 'React JS', 'GraphQL'],
-    github: 'https://github.com/zee-german/',
+    github: 'https://github.com/zee-german/gatsby-junkyard',
     pics: 'https://images.unsplash.com/photo-1461958508236-9a742665a0d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
     blurb:
       'A React powered static site generator that will meet most realistic expectations of a modern Wordpress page.\n## Features\n- GraphQL queries on creation of the pages\n- React powered features\n- ServerSideRendering'
@@ -52,7 +52,7 @@ const ProjectsData = [
     subtitle: 'homebrew not for macs',
     link: '/details/teatimer',
     tech: ['Vue JS', 'Node JS'],
-    github: 'https://github.com/zee-german/',
+    github: 'https://github.com/zee-german/tea-timer',
     pics: 'https://images.unsplash.com/photo-1491720731493-223f97d92c21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1230&q=80',
     blurb:
       'Easy to use tea-timer. Select your tea from an easy to use menu and wait for the bell to ring.\n ## Features\n- easy to use interface\n- persistent database\n- add new teas with a click'
