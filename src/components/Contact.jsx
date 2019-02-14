@@ -47,7 +47,7 @@ class Contact extends Component {
           <h1 className="contact__header">Hi, I'm zee-german</h1>
           <p className="contact__text--main">I'm a gender queer jane of all trades<br/>
             I like to fix things and make things pretty<br/>I am the queen of improvisation<br/>I speak <span className="contact__text--link">German</span> and <span className="contact__text--link">English</span> fluently<br/>Currently you can find me in <span className="contact__text--link">Berlin</span><br/>
-            You can download my CV <a href="/"  className="contact__text--link font">here</a></p>
+            You can download my CV <a href="/cv.pdf"  className="contact__text--link font">here</a></p>
         </div>
       </div>
     )
