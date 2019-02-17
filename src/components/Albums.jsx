@@ -108,61 +108,7 @@ class Albums extends React.Component {
                 <div className="gallery--link__item">Montreal</div>
               </div>
             </Link>
-            <Link to={{
-              pathname: '/albums/gallery/ottawa',
-              state: {
-                photos: Ottawa
-              }
-            }} className="gallery--link">
-              <div className="gallery--link__container">
-                <img className="gallery--link__pic" src={Ottawa[0].src} alt=""/>
-                <div className="gallery--link__item">Ottawa</div>
-              </div>
-            </Link>
-            <Link to={{
-              pathname: '/albums/gallery/ottawa',
-              state: {
-                photos: Ottawa
-              }
-            }} className="gallery--link">
-              <div className="gallery--link__container">
-                <img className="gallery--link__pic" src={Ottawa[0].src} alt=""/>
-                <div className="gallery--link__item">Ottawa</div>
-              </div>
-            </Link>
-            <Link to={{
-              pathname: '/albums/gallery/ottawa',
-              state: {
-                photos: Ottawa
-              }
-            }} className="gallery--link">
-              <div className="gallery--link__container">
-                <img className="gallery--link__pic" src={Ottawa[0].src} alt=""/>
-                <div className="gallery--link__item">Ottawa</div>
-              </div>
-            </Link>
-            <Link to={{
-              pathname: '/albums/gallery/ottawa',
-              state: {
-                photos: Ottawa
-              }
-            }} className="gallery--link">
-              <div className="gallery--link__container">
-                <img className="gallery--link__pic" src={Ottawa[0].src} alt=""/>
-                <div className="gallery--link__item">Ottawa</div>
-              </div>
-            </Link>
-            <Link to={{
-              pathname: '/albums/gallery/ottawa',
-              state: {
-                photos: Ottawa
-              }
-            }} className="gallery--link">
-              <div className="gallery--link__container">
-                <img className="gallery--link__pic" src={Ottawa[0].src} alt=""/>
-                <div className="gallery--link__item">Ottawa</div>
-              </div>
-            </Link>
+            
           </Masonry>
         </div>
       </div>);
