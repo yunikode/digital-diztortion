@@ -14,6 +14,7 @@ import Gallery from '../components/Gallery'
 import Games from '../components/Games'
 import Food from '../components/Food'
 import Journey from '../components/Journey'
+import Oops from '../components/Oops'
 
 const Page = () => (
   <Router>
@@ -52,6 +53,7 @@ const Page = () => (
                 <Route exact path="/games" component={Games}/>
                 <Route exact path="/food" component={Food}/>
                 <Route exact path="/journey" component={Journey}/>
+                <Route component={Oops} />
 
               </Switch>
             </animated.div>)

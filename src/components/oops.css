@@ -1,0 +1,29 @@
+.oops {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #E5E7E7;
+  flex-direction: column;
+  font-size: 1.5em;
+}
+
+.oops__button {
+  margin-top: 3em;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: black;
+  background: #E5E7E7;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.oops__button:hover {
+  background:  #00C6CF;
+}
+
+@media (max-width: 600px) {
+  .oops__subtitle {
+    font-size: 1.3em;
+  }
+}
