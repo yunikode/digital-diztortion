@@ -76,42 +76,45 @@ const breakpointColumnsObj = {
 
 class Albums extends React.Component {
   render() {
-    return (
-      <div style={{...backStyle}}>
-        <div className="albums">
-          <Helmet>
-            <title>e-niq | Albums</title>
-          </Helmet>
-          <div className="albums--header">
-            <h2><Link to="/elektronique">A Selection of Pictures</Link></h2>
-          </div>
-          <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
-            <Link to={{
+    return (<div style={{
+        ...backStyle
+      }}>
+      <div className="albums">
+        <Helmet>
+          <title>e-niq | Albums</title>
+        </Helmet>
+        <div className="albums--header">
+          <h2>
+            <Link to="/elektronique">A Selection of Pictures</Link>
+          </h2>
+        </div>
+        <Masonry breakpointCols={breakpointColumnsObj} className="my-masonry-grid" columnClassName="my-masonry-grid_column">
+          <Link to={{
               pathname: '/albums/gallery/ottawa',
               state: {
                 photos: Ottawa
               }
             }} className="gallery--link">
-              <div className="gallery--link__container">
-                <img className="gallery--link__pic" src={Ottawa[0].src} alt=""/>
-                <div className="gallery--link__item">Ottawa</div>
-              </div>
-            </Link>
-            <Link to={{
+            <div className="gallery--link__container">
+              <img className="gallery--link__pic" src={Ottawa[0].src} alt=""/>
+              <div className="gallery--link__item">Ottawa</div>
+            </div>
+          </Link>
+          <Link to={{
               pathname: '/albums/gallery/montreal',
               state: {
                 photos: Montreal
               }
             }}>
-              <div className="gallery--link__container">
-                <img className="gallery--link__pic" src={Montreal[0].src} alt=""/>
-                <div className="gallery--link__item">Montreal</div>
-              </div>
-            </Link>
-            
-          </Masonry>
-        </div>
-      </div>);
+            <div className="gallery--link__container">
+              <img className="gallery--link__pic" src={Montreal[0].src} alt=""/>
+              <div className="gallery--link__item">Montreal</div>
+            </div>
+          </Link>
+
+        </Masonry>
+      </div>
+    </div>);
   }
 }
 
