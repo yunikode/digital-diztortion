@@ -23,7 +23,7 @@ const ProjectsData = [
     github: 'https://github.com/zee-german/billboard',
     tech: ['Vue JS', 'Tailwind CSS', 'Adonis JS'],
     pics:
-      'https://images.unsplash.com/photo-1490529553037-4f4ed6f3f575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+      ['https://images.unsplash.com/photo-1490529553037-4f4ed6f3f575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80', 'https://c1.staticflickr.com/8/7915/40146772663_4f4cf3c496_b.jpg', 'https://c1.staticflickr.com/8/7845/47111432011_7a0a2eb68c_b.jpg', 'https://c1.staticflickr.com/8/7908/40146772593_014e8ae0ae_b.jpg', 'https://c1.staticflickr.com/8/7836/47111431931_5887a6d4b0_b.jpg', 'https://c1.staticflickr.com/8/7877/47111432071_e373f1fba9_b.jpg'],
     blurb:
       'A recreation of Twitter where users can sign up, write posts, reply to posts, and favourite posts\n\n## Features\n- Adonis JS powered backend providing the API\n- VueJS powered clientside\n- Styled with Tailwind CSS'
   },
@@ -33,7 +33,7 @@ const ProjectsData = [
     link: '/details/bello',
     github: 'https://github.com/zee-german/bello',
     tech: ['Vue JS', 'Feathers JS'],
-    pics: 'https://images.unsplash.com/photo-1524048824421-51d2958dc634?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+    pics: ['https://images.unsplash.com/photo-1524048824421-51d2958dc634?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80', 'https://c1.staticflickr.com/8/7915/40146772353_10526e02e7_b.jpg', 'https://c1.staticflickr.com/8/7882/47111431861_c302af0a8f_b.jpg', 'https://c1.staticflickr.com/8/7903/40146772543_039e5e0b1c_b.jpg'],
     blurb:
       'A recreation of a Kanban where users can sign up, create projects, make lists, create and move posts\n\n## Features\n- Feathers JS powered backend providing the API\n- VueX powered clientside\n- Styled with Vuetify'
   },
@@ -43,7 +43,7 @@ const ProjectsData = [
     link: '/details/blog',
     tech: ['Gatsby JS', 'React JS', 'GraphQL'],
     github: 'https://github.com/zee-german/gatsby-junkyard',
-    pics: 'https://images.unsplash.com/photo-1461958508236-9a742665a0d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+    pics: ['https://images.unsplash.com/photo-1461958508236-9a742665a0d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80', 'https://c1.staticflickr.com/8/7920/33257567168_5925e29c9a_b.jpg', 'https://c1.staticflickr.com/8/7806/33257567078_2625378491_b.jpg', 'https://c1.staticflickr.com/8/7824/46218841705_0b72d6e51e_b.jpg', 'https://c1.staticflickr.com/8/7835/40167983183_4a762f72ae_b.jpg'],
     blurb:
       'A React powered static site generator that will meet most realistic expectations of a modern Wordpress page.\n## Features\n- GraphQL queries on creation of the pages\n- React powered features\n- ServerSideRendering'
   },
@@ -53,7 +53,7 @@ const ProjectsData = [
     link: '/details/teatimer',
     tech: ['Vue JS', 'Node JS'],
     github: 'https://github.com/zee-german/tea-timer',
-    pics: 'https://images.unsplash.com/photo-1491720731493-223f97d92c21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1230&q=80',
+    pics: ['https://images.unsplash.com/photo-1491720731493-223f97d92c21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1230&q=80', 'https://c1.staticflickr.com/8/7806/46409419254_50424fed60_b.jpg', 'https://c1.staticflickr.com/8/7895/46409419314_03d50047c3_b.jpg', 'https://c1.staticflickr.com/8/7809/46409419354_05e68c72af_b.jpg'],
     blurb:
       'Easy to use tea-timer. Select your tea from an easy to use menu and wait for the bell to ring.\n ## Features\n- easy to use interface\n- persistent database\n- add new teas with a click'
   }
@@ -84,7 +84,7 @@ const Page = ({
     <ParallaxLayer offset={offset} speed={0.6}>
       <div
         className="slopeEnd"
-        style={{ backgroundImage: 'url(' + `${pics}` + ')' }}
+        style={{ backgroundImage: 'url(' + `${pics[0]}` + ')' }}
       />
     </ParallaxLayer>
 

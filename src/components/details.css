@@ -110,7 +110,24 @@
   pointer-events: none;
 }
 
-.github--footer {
+.details__content--header {
+  color: #f1f1f1;
+}
+
+.details__content--screenshots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details__content--screenshots img {
+  margin-top: 1em;
+  border-radius: 1em;
+  max-width: 80vw;
+}
+
+.github__footer {
   text-align: center;
   color: #f1f1f1;
   font-weight: bold;

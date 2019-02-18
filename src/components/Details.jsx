@@ -23,7 +23,7 @@ class Details extends Component {
         </div>
       </header>
 
-      <section className="details--image" style={{backgroundImage: 'url(' + `${this.props.location.state.pics}` + ')',}}>
+      <section className="details--image" style={{backgroundImage: 'url(' + `${this.props.location.state.pics[0]}` + ')',}}>
 
       </section>
 
@@ -40,12 +40,20 @@ class Details extends Component {
 
       <section className="details__content">
 
+        <h2 className="details__content--header">Screenshots</h2>
+
+        <div className="details__content--screenshots">
+
+          {this.props.location.state.pics.map((item, _i) => _i > 0 && <img className="screenshot" src={item} />)}
+          
+        </div>
+
         <div className="blurb">
           <ReactMarkdown source={this.props.location.state.blurb} escapeHtml={false}/>
 
         </div>
 
-        <p className="github--footer">See source on <a href={this.props.location.state.github} className="github--link">github</a></p>
+        <p className="github__footer">See source on <a href={this.props.location.state.github} className="github--link">github</a></p>
       </section>
 
 
