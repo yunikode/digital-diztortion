@@ -42,10 +42,11 @@
 
 .contact__box {
   position: absolute;
-	width: fit-content;
+	background: none;
+  border: none;
 	padding: 0;
   color: #f1f1f1;
-	bottom: 3vh;
+	bottom: 5em;
 }
 
 .contact__text {
@@ -128,12 +129,12 @@
     margin: 1rem
   }
 
-  .contact__box {
-    bottom: 0;
-  }
-
   .contact__text {
     font-size: 2em;
+  }
+
+  .contact__box {
+    /* bottom: 4vh; */
   }
 
   .contact__big {
