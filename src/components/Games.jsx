@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Parallax, ParallaxLayer } from 'react-spring/addons';
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 import './online-projects.css';
 
 const defaultStyles = {
@@ -11,7 +11,7 @@ const defaultStyles = {
   // display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  flexDirection: 'column',
+  flexDirection: 'column'
 };
 
 const GamesData = [
@@ -21,8 +21,12 @@ const GamesData = [
     link: '/details/tetris',
     tech: ['ES2015', 'HTML5'],
     github: 'https://github.com/zee-german/electris',
-    pics:
-      ['https://images.unsplash.com/photo-1513646981453-ffb069114476?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80', 'https://c1.staticflickr.com/8/7876/46190567435_e564c12437_z.jpg', 'https://c1.staticflickr.com/8/7868/46190567535_665e50b74b_b.jpg', 'https://c1.staticflickr.com/8/7918/46190567575_cbb43915dc_z.jpg'],
+    pics: [
+      'https://images.unsplash.com/photo-1513646981453-ffb069114476?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80',
+      'https://c1.staticflickr.com/8/7876/46190567435_e564c12437_z.jpg',
+      'https://c1.staticflickr.com/8/7868/46190567535_665e50b74b_b.jpg',
+      'https://c1.staticflickr.com/8/7918/46190567575_cbb43915dc_z.jpg'
+    ],
     blurb:
       'A recreation of Tetris with featured added to pay homage to the technology of its heydays like monochrome monitors and CRT scanlines.\n## Features\n- progessively faster levels\n- scanline mode\n- monochrome mode\n- persistent highscores'
   },
@@ -30,17 +34,26 @@ const GamesData = [
     title: 'Name that Color',
     subtitle: 'web colour guessing game',
     link: '/details/colourfull',
-    pics: ['https://images.unsplash.com/photo-1433888104365-77d8043c9615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80', 'https://c1.staticflickr.com/8/7906/32190521857_819644b356_b.jpg', 'https://c1.staticflickr.com/8/7916/32190521897_b1ea5a3967_b.jpg', 'https://c1.staticflickr.com/8/7903/32190521807_44a8992a11_b.jpg'],
+    pics: [
+      'https://images.unsplash.com/photo-1433888104365-77d8043c9615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80',
+      'https://c1.staticflickr.com/8/7906/32190521857_819644b356_b.jpg',
+      'https://c1.staticflickr.com/8/7916/32190521897_b1ea5a3967_b.jpg',
+      'https://c1.staticflickr.com/8/7903/32190521807_44a8992a11_b.jpg'
+    ],
     github: 'https://github.com/zee-german/name-damn-colour',
     tech: ['ES2015', 'HTML5'],
     blurb:
-      "Ever wondered how many colours are defined by name in CSS? \nHere you get to guess them all! \nFor the insane there is a mode where we ask HEX-Code not the name.\n## Features\n- unlockable HEX-mode for the insane\n- history of the last guesses"
+      'Ever wondered how many colours are defined by name in CSS? \nHere you get to guess them all! \nFor the insane there is a mode where we ask HEX-Code not the name.\n## Features\n- unlockable HEX-mode for the insane\n- history of the last guesses'
   },
   {
     title: 'Type-Type-R',
     subtitle: 'Hemmingway Simulator',
     link: '/details/type-type-r',
-    pics: ['https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80', 'https://c1.staticflickr.com/8/7925/33257120348_e559869678_b.jpg', 'https://c1.staticflickr.com/8/7832/33257120468_51b9381372_b.jpg'],
+    pics: [
+      'https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+      'https://c1.staticflickr.com/8/7925/33257120348_e559869678_b.jpg',
+      'https://c1.staticflickr.com/8/7832/33257120468_51b9381372_b.jpg'
+    ],
     github: 'https://github.com/zee-german/type-type-r',
     tech: ['ES2015', 'HTML5'],
     blurb:
@@ -50,13 +63,17 @@ const GamesData = [
     title: 'Asteroids',
     subtitle: 'Space Cleanup',
     link: '/details/asteroids',
-    pics: ['https://images.unsplash.com/photo-1506703244717-0f4fb867779d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80', 'https://c1.staticflickr.com/8/7822/33257427988_42764bc86d_b.jpg', 'https://c1.staticflickr.com/8/7926/32190829147_03a952af47_b.jpg', 'https://c1.staticflickr.com/8/7862/33257428138_042635f9ca_b.jpg'],
+    pics: [
+      'https://images.unsplash.com/photo-1506703244717-0f4fb867779d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80',
+      'https://c1.staticflickr.com/8/7822/33257427988_42764bc86d_b.jpg',
+      'https://c1.staticflickr.com/8/7926/32190829147_03a952af47_b.jpg',
+      'https://c1.staticflickr.com/8/7862/33257428138_042635f9ca_b.jpg'
+    ],
     github: 'https://github.com/zee-german/asteroids-js',
     tech: ['ES2015', 'HTML5'],
     blurb:
       'Shoot space rocks into smaller space rocks, make sure no space rocks hit you. Fly outside the screen, see you on the other side of the screen again.\n\n## Features\n- The longer you survive the faster they get\n- Progessively harder levels\n- Persistent Highscore'
   }
-
 ];
 
 const Page = ({
@@ -95,17 +112,13 @@ const Page = ({
       <span className="number__block">{offset + 1}</span>
     </ParallaxLayer>
 
-    <ParallaxLayer
-
-      offset={offset}
-      speed={2}
-    >
+    <ParallaxLayer offset={offset} speed={2}>
       <div className="nav__buttons">
         <div className="nav prev" onClick={onPrev}>
           {offset > 0 && <a onClick={onPrev}>prev</a>}
         </div>
         <div className="nav next">
-          <a onClick={onNext}>{offset == maxNum-1 ? 'first' : 'next'}</a>
+          <a onClick={onNext}>{offset == maxNum - 1 ? 'first' : 'next'}</a>
         </div>
       </div>
     </ParallaxLayer>

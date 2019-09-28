@@ -13,7 +13,8 @@ import ElektroLogo from './ElektroLogo';
 
 import Contact from './Contact';
 
-import { Trail, animated } from 'react-spring';
+import { animated } from 'react-spring';
+import { Trail } from 'react-spring/renderprops';
 
 const defaultStyles = {
   height: '100vh',
